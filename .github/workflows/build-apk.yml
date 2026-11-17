@@ -28,7 +28,7 @@ jobs:
         uses: android-actions/setup-android@v4
 
       - name: Extract project
-        run: unzip -q NEON_SURVIVAL_Android_Project (1).zip -d source
+        run: unzip -q "NEON_SURVIVAL_Android_Project (1).zip" -d source
 
       - name: Install packages
         working-directory: source
