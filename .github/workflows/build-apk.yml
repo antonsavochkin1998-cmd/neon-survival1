@@ -24,7 +24,10 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - uses: android-actions/setup-android@v3
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: true 
 
       - name: Extract project
         run: unzip -q NEON_SURVIVAL_Android_Project.zip -d source
